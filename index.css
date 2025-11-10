@@ -22,7 +22,7 @@
   h2:not([class]),
   p:not([class]),
   figcaption:not([class]) {
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     line-height: 1.5;
   }
 

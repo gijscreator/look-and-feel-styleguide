@@ -4,15 +4,63 @@
 
 @layer styleguide {
 
+    * {
+        text-decoration: none;
+        line-height: 1.4;
+    }
+
+
+
     /* Schrijf hier de verschillende stijlen, die
        gedeeld gaan worden door jullie projecten */
 
     /* Kleuren */
-    .color-example {
-        background-color: #bada55;
+    .color-1 {
+        background-color: #172f3b;
+        color: #E9ECEE;
+    }
+
+    .color-2 {
+        background-color: #E9ECEE;
+    }
+
+    .color-3 {
+        background-color: #00E53D;
+    }
+
+    .color-4 {
+        background-color: #90A1AA;
+    }
+
+    .color-5 {
+        background-color: #FF2A34;
     }
 
     /* Typografie */
+    .header-1 {
+        font-size: 2.75rem;
+        font-weight: bold;
+    }
+
+    .header-2 {
+        font-size: 2.25rem;
+        font-weight: bold;
+    }
+
+    .header-3 {
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+
+    .header-4 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .header-5 {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
 
 
     /* Formulier elementen */
