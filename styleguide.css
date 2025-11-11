@@ -2,6 +2,70 @@
    https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers
    https://css-tricks.com/css-cascade-layers/ */
 
+@font-face {
+    font-family: 'Bariol';
+    font-style: normal;
+    font-weight: 200;
+    src: local('Bariol Thin'), url('fonts/bariol_thin-webfont.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bariol';
+    font-style: italic;
+    font-weight: 200;
+    src: local('Bariol Thin Italic'), url('fonts/bariol_thin_italic-webfont.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bariol';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Bariol Light'), url('fonts/bariol_light-webfont.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bariol';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Bariol Light Italic'), url('fonts/bariol_light_italic-webfont.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bariol';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bariol Regular'), url('fonts/bariol_regular-webfont.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bariol';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Bariol Regular Italic'), url('fonts/bariol_regular_italic-webfont.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bariol';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Bariol Bold'), url('fonts/bariol_bold-webfont.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bariol';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Bariol Bold Italic'), url('fonts/bariol_bold_italic-webfont.woff') format('woff');
+    font-display: swap;
+}
+
 @layer styleguide {
 
     * {
@@ -9,55 +73,192 @@
         line-height: 1.4;
     }
 
+    html {
+        --red-1: #FFA9AD;
+        --red-2: #FF545C;
+        --red-3: #FF2A34;
+        --red-4: #661014;
+
+
+        --green-1: #00FF44;
+        --green-2: #00E53D;
+        --green-3: #45DA38;
+        --green-4: #225530;
+
+
+        --grey-1: #E9ECEE;
+        --grey-2: #E4E4E4;
+        --grey-3: #9DA1AA;
+        --grey-4: #666666;
+
+        --blue-1: #4E6977;
+        --blue-2: #224455;
+        --blue-3: #172F3B;
+        --blue-4: #0E1B22;
+
+        --white-1: #FFFFFF;
+        font-family: 'Bariol';
+    }
 
 
     /* Schrijf hier de verschillende stijlen, die
        gedeeld gaan worden door jullie projecten */
 
     /* Kleuren */
-    .color-1 {
-        background-color: #172f3b;
-        color: #E9ECEE;
+    #kleur {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        div:nth-of-type(1) {
+            grid-row: 1;
+            grid-column: 1 / -1;
+        }
+
+        div:nth-of-type(2) {
+            grid-row: 2;
+
+            figure {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+
+                code {
+                    width: 5rem;
+                }
+            }
+
+            figure:nth-of-type(1) {
+                code:nth-of-type(1) {
+                    background-color: var(--green-1);
+                }
+
+                code:nth-of-type(2) {
+                    background-color: var(--green-2);
+
+                }
+
+                code:nth-of-type(3) {
+                    background-color: var(--green-3);
+
+                }
+
+                code:nth-of-type(4) {
+                    background-color: var(--green-4);
+                    color: var(--white-1);
+
+                }
+            }
+
+            figure:nth-of-type(2) {
+                code:nth-of-type(1) {
+                    background-color: var(--red-1);
+                }
+
+                code:nth-of-type(2) {
+                    background-color: var(--red-2);
+                }
+
+                code:nth-of-type(3) {
+                    background-color: var(--red-3);
+                }
+
+                code:nth-of-type(4) {
+                    background-color: var(--red-4);
+                    color: var(--white-1);
+
+                }
+            }
+
+            figure:nth-of-type(3) {
+                color: var(--white-1);
+
+                code:nth-of-type(1) {
+                    background-color: var(--blue-1);
+                }
+
+                code:nth-of-type(2) {
+                    background-color: var(--blue-2);
+                }
+
+                code:nth-of-type(3) {
+                    background-color: var(--blue-3);
+                }
+
+                code:nth-of-type(4) {
+                    background-color: var(--blue-4);
+                }
+            }
+
+            figure:nth-of-type(4) {
+                code:nth-of-type(1) {
+                    background-color: var(--grey-1);
+                }
+
+                code:nth-of-type(2) {
+                    background-color: var(--grey-2);
+                }
+
+                code:nth-of-type(3) {
+                    background-color: var(--grey-3);
+                }
+
+                code:nth-of-type(4) {
+                    background-color: var(--grey-4);
+                }
+            }
+
+            figure:nth-of-type(5) {
+                code:nth-of-type(1) {
+                    background-color: var(--white-1);
+                    border: var(--blue-4) solid 1px;
+                }
+
+                code:nth-of-type(2) {
+                    background-color: var();
+                    display: none;
+                }
+
+                code:nth-of-type(3) {
+                    background-color: var();
+                    display: none;
+
+                }
+
+                code:nth-of-type(4) {
+                    background-color: var();
+                    display: none;
+
+                }
+            }
+
+        }
+
     }
 
-    .color-2 {
-        background-color: #E9ECEE;
-    }
 
-    .color-3 {
-        background-color: #00E53D;
-    }
-
-    .color-4 {
-        background-color: #90A1AA;
-    }
-
-    .color-5 {
-        background-color: #FF2A34;
-    }
 
     /* Typografie */
-    .header-1 {
+    h1 {
         font-size: 2.75rem;
         font-weight: bold;
     }
 
-    .header-2 {
+    h2 {
         font-size: 2.25rem;
         font-weight: bold;
     }
 
-    .header-3 {
+    h3 {
         font-size: 1.75rem;
         font-weight: bold;
     }
 
-    .header-4 {
+    h4 {
         font-size: 1.5rem;
         font-weight: bold;
     }
 
-    .header-5 {
+    h5 {
         font-size: 1.25rem;
         font-weight: bold;
     }
