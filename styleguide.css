@@ -74,9 +74,13 @@
     }
 
     html {
+        --nav: hsl(200, 43%, 23%);
+        --primary-bg: hsl(0, 0%, 100%);
+        --secundary-bg: hsl(0, 0%, 89%);
+        --accent: hsl(136, 100%, 50%);
+        --alert: hsl(357, 100%, 58%);
 
-
-        --grey-lighter: #E9ECEE;
+        /* --grey-lighter: #E9ECEE;  
         --grey-light: #E4E4E4;
         --grey-dark: #9DA1AA;
         --grey-darker: #666666;
@@ -94,10 +98,10 @@
         --red-lighter: #FFA9AD;
         --red-light: #FF545C;
         --red-dark: #FF2A34;
-        --red-darker: #661014;
+        --red-darker: #661014; */
 
         --white: #FFFFFF;
-        font-family: 'Bariol';
+        font-family: 'Bariol', sans-serif;
     }
 
 
@@ -276,6 +280,38 @@
             border: var(--blue-darker) 2px solid;
             border-radius: 20px;
             width: 15rem;
+        }
+    }
+
+    .btn {
+        all: unset;
+        background-color: var(--green-dark);
+        color: var(--white);
+        padding: 1rem 1rem;
+        border-radius: 1.5rem;
+        font-weight: bold;
+    }
+
+    .btn-round {
+        all: unset;
+        background-color: var(--green-dark);
+        color: var(--white);
+        padding: 3vw;
+        border-radius: 100%;
+        font-weight: bold;
+    }
+
+    .btn-round-capture {
+        all: unset;
+        background-color: var(--green-dark);
+        color: var(--white);
+        padding: 3rem 3rem;
+        border-radius: 100%;
+        font-weight: bold;
+
+        svg {
+            width: 3rem;
+            height: auto;
         }
     }
 }
