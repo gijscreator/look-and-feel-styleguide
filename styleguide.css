@@ -74,48 +74,69 @@
     }
 
     html {
-        --nav-h: 200;
-        --nav-s: 43%;
-        --primary-bg: hsl(0, 0%, 100%);
-        --secundary-bg: hsl(0, 0%, 89%);
-        --accent: hsl(136, 100%, 50%);
-        --alert: hsl(357, 100%, 58%);
+    /* ===== BASE COLOR VARIABLES ===== */
+    --nav-h: 200;
+    --nav-s: 43%;
 
-        --darkest: 9%;
-        --dark: 16%;
-        --neutral: 23%; 
-        --light: 39%;
-        --lightest: 45%;
+    --primary-bg-h: 0;
+    --primary-bg-s: 0%;
 
-        --nav-darkest: hsl(var(--nav-h), var(--nav-s), var(--darkest));
-        --nav-dark: hsl(var(--nav-h), var(--nav-s), var(--dark));
-        --nav-neutral: hsl(var(--nav-h), var(--nav-s), var(--neutral));
-        --nav-light: hsl(var(--nav-h), var(--nav-s), var(--light));
-        --nav-lightest: hsl(var(--nav-h), var(--nav-s), var(--lightest));
+    --secondary-bg-h: 0;
+    --secondary-bg-s: 0%;
 
-        --grey-lighter: #E9ECEE;  
-        --grey-light: #E4E4E4;
-        --grey-dark: #9DA1AA;
-        --grey-darker: #666666;
+    --accent-h: 136;
+    --accent-s: 100%;
 
-        --blue-lighter: hsl(200, 21%, 39%);
-        --blue-light: hsl(200, 43%, 23%);
-        --blue-dark: hsl(200, 44%, 16%);
-        --blue-darker: hsl(201, 42%, 9%);
+    --alert-h: 357;
+    --alert-s: 100%;
 
-        --green-lighter: #00FF44;
-        --green-light: #00E53D;
-        --green-dark: #45DA38;
-        --green-darker: #225530;
+    /* ===== LIGHTNESS SCALE ===== */
+    --darkest: 9%;
+    --dark: 16%;
+    --neutral: 23%; 
+    --light: 39%;
+    --lightest: 45%;
 
-        --red-lighter: #FFA9AD;
-        --red-light: #FF545C;
-        --red-dark: #FF2A34;
-        --red-darker: #661014;
+    /* ===== NAV COLORS ===== */
+    --nav-darkest: hsl(var(--nav-h), var(--nav-s), var(--darkest));
+    --nav-dark: hsl(var(--nav-h), var(--nav-s), var(--dark));
+    --nav-neutral: hsl(var(--nav-h), var(--nav-s), var(--neutral));
+    --nav-light: hsl(var(--nav-h), var(--nav-s), var(--light));
+    --nav-lightest: hsl(var(--nav-h), var(--nav-s), var(--lightest));
 
-        --white: #FFFFFF;
-        font-family: 'Bariol', sans-serif;
-    }
+    /* ===== PRIMARY BACKGROUND COLORS ===== */
+    --primary-bg-darkest: hsl(var(--primary-bg-h), var(--primary-bg-s), var(--darkest));
+    --primary-bg-dark: hsl(var(--primary-bg-h), var(--primary-bg-s), var(--dark));
+    --primary-bg-neutral: hsl(var(--primary-bg-h), var(--primary-bg-s), var(--neutral));
+    --primary-bg-light: hsl(var(--primary-bg-h), var(--primary-bg-s), var(--light));
+    --primary-bg-lightest: hsl(var(--primary-bg-h), var(--primary-bg-s), var(--lightest));
+
+    /* ===== SECONDARY BACKGROUND COLORS ===== */
+    --secondary-bg-darkest: hsl(var(--secondary-bg-h), var(--secondary-bg-s), var(--darkest));
+    --secondary-bg-dark: hsl(var(--secondary-bg-h), var(--secondary-bg-s), var(--dark));
+    --secondary-bg-neutral: hsl(var(--secondary-bg-h), var(--secondary-bg-s), var(--neutral));
+    --secondary-bg-light: hsl(var(--secondary-bg-h), var(--secondary-bg-s), var(--light));
+    --secondary-bg-lightest: hsl(var(--secondary-bg-h), var(--secondary-bg-s), var(--lightest));
+
+    /* ===== ACCENT COLORS ===== */
+    --accent-darkest: hsl(var(--accent-h), var(--accent-s), var(--darkest));
+    --accent-dark: hsl(var(--accent-h), var(--accent-s), var(--dark));
+    --accent-neutral: hsl(var(--accent-h), var(--accent-s), var(--neutral));
+    --accent-light: hsl(var(--accent-h), var(--accent-s), var(--light));
+    --accent-lightest: hsl(var(--accent-h), var(--accent-s), var(--lightest));
+
+    /* ===== ALERT COLORS ===== */
+    --alert-darkest: hsl(var(--alert-h), var(--alert-s), var(--darkest));
+    --alert-dark: hsl(var(--alert-h), var(--alert-s), var(--dark));
+    --alert-neutral: hsl(var(--alert-h), var(--alert-s), var(--neutral));
+    --alert-light: hsl(var(--alert-h), var(--alert-s), var(--light));
+    --alert-lightest: hsl(var(--alert-h), var(--alert-s), var(--lightest));
+
+    --white: white;
+    font-family: 'Bariol', sans-serif;
+}
+
+
 
 
     /* Schrijf hier de verschillende stijlen, die
@@ -152,21 +173,26 @@
 
             figure:nth-of-type(1) {
                 code:nth-of-type(1) {
-                    background-color: var(--green-lighter);
+                    background-color: var(--accent-lightest);
                 }
 
                 code:nth-of-type(2) {
-                    background-color: var(--green-light);
+                    background-color: var(--accent-light);
 
                 }
 
                 code:nth-of-type(3) {
-                    background-color: var(--green-dark);
+                    background-color: var(--accent-neutral);
 
                 }
 
                 code:nth-of-type(4) {
-                    background-color: var(--green-darker);
+                    background-color: var(--accent-dark);
+                    color: var(--white);
+
+                }
+                code:nth-of-type(5) {
+                    background-color: var(--accent-darkest);
                     color: var(--white);
 
                 }
@@ -174,19 +200,24 @@
 
             figure:nth-of-type(2) {
                 code:nth-of-type(1) {
-                    background-color: var(--red-lighter);
+                    background-color: var(--alert-lightest);
                 }
 
                 code:nth-of-type(2) {
-                    background-color: var(--red-light);
+                    background-color: var(--alert-light);
                 }
 
                 code:nth-of-type(3) {
-                    background-color: var(--red-dark);
+                    background-color: var(--alert-neutral);
                 }
 
                 code:nth-of-type(4) {
-                    background-color: var(--red-darker);
+                    background-color: var(--alert-dark);
+                    color: var(--white);
+
+                }
+                code:nth-of-type(5) {
+                    background-color: var(--alert-darkest);
                     color: var(--white);
 
                 }
@@ -217,19 +248,24 @@
 
             figure:nth-of-type(4) {
                 code:nth-of-type(1) {
-                    background-color: var(--grey-lighter);
+                    background-color: var(--primary-bg-lightest);
                 }
 
                 code:nth-of-type(2) {
-                    background-color: var(--grey-light);
+                    background-color: var(--primary-bg-light);
                 }
 
                 code:nth-of-type(3) {
-                    background-color: var(--grey-dark);
+                    background-color: var(--primary-bg-neutral);
                 }
 
                 code:nth-of-type(4) {
-                    background-color: var(--grey-darker);
+                    background-color: var(--primary-bg-dark);
+                }
+                code:nth-of-type(5) {
+                    background-color: var(--primary-bg-darkest);
+                    color: var(--white);
+
                 }
             }
 
