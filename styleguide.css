@@ -75,6 +75,7 @@
 
     html {
 
+
         --grey-lighter: #E9ECEE;
         --grey-light: #E4E4E4;
         --grey-dark: #9DA1AA;
@@ -134,88 +135,88 @@
 
             figure:nth-of-type(1) {
                 code:nth-of-type(1) {
-                    background-color: var(--green-1);
+                    background-color: var(--green-lighter);
                 }
 
                 code:nth-of-type(2) {
-                    background-color: var(--green-2);
+                    background-color: var(--green-light);
 
                 }
 
                 code:nth-of-type(3) {
-                    background-color: var(--green-3);
+                    background-color: var(--green-dark);
 
                 }
 
                 code:nth-of-type(4) {
-                    background-color: var(--green-4);
-                    color: var(--white-1);
+                    background-color: var(--green-darker);
+                    color: var(--white-lighter);
 
                 }
             }
 
             figure:nth-of-type(2) {
                 code:nth-of-type(1) {
-                    background-color: var(--red-1);
+                    background-color: var(--red-lighter);
                 }
 
                 code:nth-of-type(2) {
-                    background-color: var(--red-2);
+                    background-color: var(--red-light);
                 }
 
                 code:nth-of-type(3) {
-                    background-color: var(--red-3);
+                    background-color: var(--red-dark);
                 }
 
                 code:nth-of-type(4) {
-                    background-color: var(--red-4);
-                    color: var(--white-1);
+                    background-color: var(--red-darker);
+                    color: var(--white-lighter);
 
                 }
             }
 
             figure:nth-of-type(3) {
-                color: var(--white-1);
+                color: var(--white-lighter);
 
                 code:nth-of-type(1) {
-                    background-color: var(--blue-1);
+                    background-color: var(--blue-lighter);
                 }
 
                 code:nth-of-type(2) {
-                    background-color: var(--blue-2);
+                    background-color: var(--blue-light);
                 }
 
                 code:nth-of-type(3) {
-                    background-color: var(--blue-3);
+                    background-color: var(--blue-dark);
                 }
 
                 code:nth-of-type(4) {
-                    background-color: var(--blue-4);
+                    background-color: var(--blue-darker);
                 }
             }
 
             figure:nth-of-type(4) {
                 code:nth-of-type(1) {
-                    background-color: var(--grey-1);
+                    background-color: var(--grey-lighter);
                 }
 
                 code:nth-of-type(2) {
-                    background-color: var(--grey-2);
+                    background-color: var(--grey-light);
                 }
 
                 code:nth-of-type(3) {
-                    background-color: var(--grey-3);
+                    background-color: var(--grey-dark);
                 }
 
                 code:nth-of-type(4) {
-                    background-color: var(--grey-4);
+                    background-color: var(--grey-darker);
                 }
             }
 
             figure:nth-of-type(5) {
                 code:nth-of-type(1) {
-                    background-color: var(--white-1);
-                    border: var(--blue-4) solid 1px;
+                    background-color: var(--white-lighter);
+                    border: var(--blue-darker) solid 1px;
                 }
 
                 code:nth-of-type(2) {
@@ -272,7 +273,7 @@
     /* Formulier elementen */
     .searchbar {
         input{
-            border: var(--blue-4) 2px solid;
+            border: var(--blue-darker) 2px solid;
             border-radius: 20px;
             width: 15rem;
         }
