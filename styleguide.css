@@ -150,7 +150,7 @@
 
                 code:nth-of-type(4) {
                     background-color: var(--green-darker);
-                    color: var(--white-lighter);
+                    color: var(--white);
 
                 }
             }
@@ -170,7 +170,7 @@
 
                 code:nth-of-type(4) {
                     background-color: var(--red-darker);
-                    color: var(--white-lighter);
+                    color: var(--white);
 
                 }
             }
@@ -215,7 +215,7 @@
 
             figure:nth-of-type(5) {
                 code:nth-of-type(1) {
-                    background-color: var(--white-lighter);
+                    background-color: var(--white);
                     border: var(--blue-darker) solid 1px;
                 }
 
