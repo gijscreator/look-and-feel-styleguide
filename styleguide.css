@@ -74,29 +74,28 @@
     }
 
     html {
-        --red-1: #FFA9AD;
-        --red-2: #FF545C;
-        --red-3: #FF2A34;
-        --red-4: #661014;
 
+        --grey-lighter: #E9ECEE;
+        --grey-light: #E4E4E4;
+        --grey-dark: #9DA1AA;
+        --grey-darker: #666666;
 
-        --green-1: #00FF44;
-        --green-2: #00E53D;
-        --green-3: #45DA38;
-        --green-4: #225530;
+        --blue-lighter: #4E6977;
+        --blue-light: #224455;
+        --blue-dark: #172F3B;
+        --blue-darker: #0E1B22;
 
+        --green-lighter: #00FF44;
+        --green-light: #00E53D;
+        --green-dark: #45DA38;
+        --green-darker: #225530;
 
-        --grey-1: #E9ECEE;
-        --grey-2: #E4E4E4;
-        --grey-3: #9DA1AA;
-        --grey-4: #666666;
+        --red-lighter: #FFA9AD;
+        --red-light: #FF545C;
+        --red-dark: #FF2A34;
+        --red-darker: #661014;
 
-        --blue-1: #4E6977;
-        --blue-2: #224455;
-        --blue-3: #172F3B;
-        --blue-4: #0E1B22;
-
-        --white-1: #FFFFFF;
+        --white: #FFFFFF;
         font-family: 'Bariol';
     }
 
