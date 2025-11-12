@@ -319,6 +319,15 @@
         font-weight: 700;
     }
 
+    h6 {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+    p {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
 
     /* Formulier elementen */
     .searchbar {
