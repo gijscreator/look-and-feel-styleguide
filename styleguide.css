@@ -119,7 +119,7 @@
         --white: white;
 
         /* ===== FONT-FAMILY ===== */
-        font-family: 'Bariol', sans-serif;
+        --font-family: 'Bariol', sans-serif;
 
         /* =====FONT-SIZE ===== */
         --font-size-largest: 2.75rem;
