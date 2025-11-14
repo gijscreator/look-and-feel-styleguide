@@ -5,7 +5,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: normal;
-    font-weight: var(--font-weight-lightest);
+    font-weight: 100;
     src: local('Bariol Thin'), url('fonts/bariol_thin-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -13,7 +13,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: italic;
-    font-weight: var(--font-weight-light);
+    font-weight: 200;
     src: local('Bariol Thin Italic'), url('fonts/bariol_thin_italic-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -21,7 +21,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: normal;
-    font-weight: var(--font-weight-neutral);
+    font-weight: 400;
     src: local('Bariol Light'), url('fonts/bariol_light-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -29,7 +29,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: italic;
-    font-weight: var(--font-weight-neutral);
+    font-weight: 400;
     src: local('Bariol Light Italic'), url('fonts/bariol_light_italic-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -37,7 +37,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: normal;
-    font-weight: var(--font-weight-neutral);
+    font-weight: 400;
     src: local('Bariol Regular'), url('fonts/bariol_regular-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -45,7 +45,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: italic;
-    font-weight: var(--font-weight-neutral);
+    font-weight: 400;
     src: local('Bariol Regular Italic'), url('fonts/bariol_regular_italic-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -53,7 +53,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: normal;
-    font-weight: var(--font-weight-dark);
+    font-weight: 700;
     src: local('Bariol Bold'), url('fonts/bariol_bold-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -61,7 +61,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: italic;
-    font-weight: var(--font-weight-dark);
+    font-weight: 700;
     src: local('Bariol Bold Italic'), url('fonts/bariol_bold_italic-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -188,22 +188,19 @@
 
     /* styling achtergrond search */
 
-    .searchbar {
-        input {
-            border: none;
-            width: 80vw;
-            height: 2rem;
-            max-height: 3rem;
-            background-color: var(--white);
-            border-radius: var(--border-radius-tiny);
-            width: 15rem;
-        }
+    .searchbar input {
+        border: none;
+        height: 2rem;
+        max-height: 3rem;
+        background-color: var(--white);
+        border-radius: var(--border-radius-tiny);
+        width: min(80vw, 15rem); /* responsive: up to 15rem, but shrink on narrow screens */
+    }
 
-        input:focus,
-        input:focus-visible {
-            outline: none;
-            box-shadow: none;
-        }
+    .searchbar input:focus,
+    .searchbar input:focus-visible {
+        outline: none;
+        box-shadow: none;
     }
 
     input[type="radio"],
@@ -249,21 +246,18 @@
         border-radius: var(--border-radius-big);
         font-weight: var(--font-weight-dark);
         transition: background-color 1s;
+    }
 
-        &:hover {
-            background-color: var(--accent-darkest);
+    .btn:hover {
+        background-color: var(--accent-darkest);
+    }
 
-        }
+    .btn:active {
+        background-color: var(--accent-darkest);
+    }
 
-        &:active {
-            background-color: var(--accent-darkest);
-
-        }
-
-        &:focus {
-            background-color: var(--accent-darkest);
-
-        }
+    .btn:focus {
+        background-color: var(--accent-darkest);
     }
 
     .round {
@@ -274,10 +268,10 @@
 
     .capture {
         padding: 3rem 3rem;
+    }
 
-        svg {
-            width: 3rem;
-            height: auto;
-        }
+    .capture svg {
+        width: 3rem;
+        height: auto;
     }
 }
