@@ -369,29 +369,33 @@
         padding: 1rem 1rem;
         border-radius: 1.5rem;
         font-weight: bold;
+        transition: background-color 1s; 
 
         &:hover {
-            background-color: var(--accent-light);
+            background-color: var(--accent-darkest);
+        
+        }
 
+        &:active {
+            background-color: var(--accent-darkest);
+        
+        }
+
+        &:focus {
+            background-color: var(--accent-darkest);
+        
         }
     }
 
-    .btn-round {
-        all: unset;
-        background-color: var(--accent-light);
-        color: var(--white);
-        padding: 3vw;
+    .round {
+        padding: 2vw;
         border-radius: 100%;
-        font-weight: bold;
+        line-height: 1;
     }
 
-    .btn-round-capture {
-        all: unset;
-        background-color: var(--accent-light);
-        color: var(--white);
+    .round-capture {
         padding: 3rem 3rem;
         border-radius: 100%;
-        font-weight: bold;
 
         svg {
             width: 3rem;
