@@ -68,249 +68,88 @@
 
 @layer styleguide {
 
-    * {
-        text-decoration: none;
-        line-height: 1.4;
+    html {
+        /* ===== BASE COLOR VARIABLES ===== */
+        --nav-h-s: 200, 43%;
+
+        --primary-bg-h-s: 0, 0%;
+
+        --secondary-bg-h-s: 200, 13%;
+
+        --accent-h-s: 136, 100%;
+
+        --alert-h-s: 357, 100%;
+
+        /* ===== NAV COLORS ===== */
+        --nav-darkest: hsl(var(--nav-h-s), 9%);
+        --nav-dark: hsl(var(--nav-h-s), 16%);
+        --nav-neutral: hsl(var(--nav-h-s), 23%);
+        --nav-light: hsl(var(--nav-h-s), 39%);
+        --nav-lightest: hsl(var(--nav-h-s), 45%);
+
+        /* ===== PRIMARY BACKGROUND COLORS ===== */
+        --primary-bg-darkest: hsl(var(--primary-bg-h-s), 50%);
+        --primary-bg-dark: hsl(var(--primary-bg-h-s), 60%);
+        --primary-bg-neutral: hsl(var(--primary-bg-h-s), 70%);
+        --primary-bg-light: hsl(var(--primary-bg-h-s), 80%);
+        --primary-bg-lightest: hsl(var(--primary-bg-h-s), 90%);
+
+        /* ===== SECONDARY BACKGROUND COLORS ===== */
+        --secondary-bg-darkest: hsl(var(--secondary-bg-h-s), 50%);
+        --secondary-bg-dark: hsl(var(--secondary-bg-h-s), 60%);
+        --secondary-bg-neutral: hsl(var(--secondary-bg-h-s), 70%);
+        --secondary-bg-light: hsl(var(--secondary-bg-h-s), 80%);
+        --secondary-bg-lightest: hsl(var(--secondary-bg-h-s), 90%);
+
+        /* ===== ACCENT COLORS ===== */
+        --accent-darkest: hsl(var(--accent-h-s), 9%);
+        --accent-dark: hsl(var(--accent-h-s), 16%);
+        --accent-neutral: hsl(var(--accent-h-s), 23%);
+        --accent-light: hsl(var(--accent-h-s), 39%);
+        --accent-lightest: hsl(var(--accent-h-s), 45%);
+
+        /* ===== ALERT COLORS ===== */
+        --alert-darkest: hsl(var(--alert-h-s), 20%);
+        --alert-dark: hsl(var(--alert-h-s), 16%);
+        --alert-neutral: hsl(var(--alert-h-s), 23%);
+        --alert-light: hsl(var(--alert-h-s), 65%);
+        --alert-lightest: hsl(var(--alert-h-s), 75%);
+
+        /* ===== WHITE ===== */
+        --white: white;
+
+        /* ===== FONT-FAMILY ===== */
+        font-family: 'Bariol', sans-serif;
+
+        /* =====FONT-SIZE ===== */
+        --font-size-largest: 2.75rem;
+        --font-size-large: 2.25rem;
+        --font-size-medium: 1.75rem;
+        --font-size-small: 1.5rem;
+        --font-size-smallest: 1.25rem;
+        --font-size-paragraph: 1rem;
+        --font-size-labels: .7rem;
+
+        /* ===== FONT-WEIGHT ===== */
+        --font-weight-darkest: 900;
+        --font-weight-dark: 700;
+        --font-weight-neutral: 400;
+        --font-weight-light: 200;
+        --font-weight-lightest: 100;
+
+        /* ===== BORDER-RADIUS ===== */
+        --border-radius-tiny: .3rem;
+        --border-radius-small: .5rem;
+        --border-radius-neutral: 1rem;
+        --border-radius-big: 1.5rem;
+        --border-radius-round: 100%;
     }
-
-html {
-    /* ===== BASE COLOR VARIABLES ===== */
-    --nav-h-s: 200, 43%;
-
-    --primary-bg-h-s: 0, 0%;
-
-    --secondary-bg-h-s: 200, 13%;
-
-    --accent-h-s: 136, 100%;
-
-    --alert-h-s: 357, 100%;
-
-    /* ===== NAV COLORS ===== */
-    --nav-darkest: hsl(var(--nav-h-s), 9%);
-    --nav-dark: hsl(var(--nav-h-s), 16%);
-    --nav-neutral: hsl(var(--nav-h-s), 23%);
-    --nav-light: hsl(var(--nav-h-s), 39%);
-    --nav-lightest: hsl(var(--nav-h-s), 45%);
-
-    /* ===== PRIMARY BACKGROUND COLORS ===== */
-    --primary-bg-darkest: hsl(var(--primary-bg-h-s), 50%);
-    --primary-bg-dark: hsl(var(--primary-bg-h-s), 60%);
-    --primary-bg-neutral: hsl(var(--primary-bg-h-s), 70%);
-    --primary-bg-light: hsl(var(--primary-bg-h-s), 80%);
-    --primary-bg-lightest: hsl(var(--primary-bg-h-s), 90%);
-
-    /* ===== SECONDARY BACKGROUND COLORS ===== */
-    --secondary-bg-darkest: hsl(var(--secondary-bg-h-s), 50%);
-    --secondary-bg-dark: hsl(var(--secondary-bg-h-s), 60%);
-    --secondary-bg-neutral: hsl(var(--secondary-bg-h-s), 70%);
-    --secondary-bg-light: hsl(var(--secondary-bg-h-s), 80%);
-    --secondary-bg-lightest: hsl(var(--secondary-bg-h-s), 90%);
-
-    /* ===== ACCENT COLORS ===== */
-    --accent-darkest: hsl(var(--accent-h-s), 9%);
-    --accent-dark: hsl(var(--accent-h-s), 16%);
-    --accent-neutral: hsl(var(--accent-h-s), 23%);
-    --accent-light: hsl(var(--accent-h-s), 39%);
-    --accent-lightest: hsl(var(--accent-h-s), 45%);
-
-    /* ===== ALERT COLORS ===== */
-    --alert-darkest: hsl(var(--alert-h-s), 20%);
-    --alert-dark: hsl(var(--alert-h-s), 16%);
-    --alert-neutral: hsl(var(--alert-h-s), 23%);
-    --alert-light: hsl(var(--alert-h-s), 65%);
-    --alert-lightest: hsl(var(--alert-h-s), 75%);
-
-    /* ===== WHITE ===== */
-    --white: white;
-
-    /* ===== FONT-FAMILY ===== */
-    font-family: 'Bariol', sans-serif;
-
-    /* =====FONT-SIZE ===== */
-    --font-size-largest: 2.75rem;
-    --font-size-large: 2.25rem;
-    --font-size-medium: 1.75rem;
-    --font-size-small: 1.5rem;
-    --font-size-smallest: 1.25rem;
-    --font-size-paragraph: 1rem;
-    --font-size-labels: .7rem;
-
-    /* ===== FONT-WEIGHT ===== */
-    --font-weight-darkest: 900;
-    --font-weight-dark: 700;
-    --font-weight-neutral: 400;
-    --font-weight-light: 200;
-    --font-weight-lightest: 100;
-
-    /* ===== BORDER-RADIUS ===== */
-    --border-radius-tiny: .3rem;
-    --border-radius-small: .5rem;
-    --border-radius-neutral: 1rem;
-    --border-radius-big: 1.5rem;
-    --border-radius-round: 100%;
-}
 
     /* Schrijf hier de verschillende stijlen, die
        gedeeld gaan worden door jullie projecten */
 
-    /* Kleuren */
-    #kleur {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-
-        div:nth-of-type(1) {
-            grid-row: 1;
-            grid-column: 1 / -1;
-        }
-
-        div:nth-of-type(2) {
-            grid-row: 2;
-
-            p {
-                margin: .5rem 0 .5rem 0;
-            }
-
-            figure {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: nowrap;
-                margin: 0;
-
-                code {
-                    width: 5rem;
-                }
-            }
-
-
-            figure:nth-of-type(1) {
-                code:nth-of-type(1) {
-                    background-color: var(--accent-lightest);
-                }
-
-                code:nth-of-type(2) {
-                    background-color: var(--accent-light);
-
-                }
-
-                code:nth-of-type(3) {
-                    background-color: var(--accent-neutral);
-
-                }
-
-                code:nth-of-type(4) {
-                    background-color: var(--accent-dark);
-                    color: var(--white);
-
-                }
-                code:nth-of-type(5) {
-                    background-color: var(--accent-darkest);
-                    color: var(--white);
-
-                }
-            }
-
-            figure:nth-of-type(2) {
-                code:nth-of-type(1) {
-                    background-color: var(--alert-lightest);
-                }
-
-                code:nth-of-type(2) {
-                    background-color: var(--alert-light);
-                }
-
-                code:nth-of-type(3) {
-                    background-color: var(--alert-neutral);
-                }
-
-                code:nth-of-type(4) {
-                    background-color: var(--alert-dark);
-                    color: var(--white);
-
-                }
-                code:nth-of-type(5) {
-                    background-color: var(--alert-darkest);
-                    color: var(--white);
-
-                }
-            }
-
-            figure:nth-of-type(3) {
-                color: var(--white);
-
-                code:nth-of-type(1) {
-                    background-color: var(--nav-lightest);
-                }
-
-                code:nth-of-type(2) {
-                    background-color: var(--nav-light);
-                }
-
-                code:nth-of-type(3) {
-                    background-color: var(--nav-neutral);
-                }
-
-                code:nth-of-type(4) {
-                    background-color: var(--nav-dark);
-                }
-                code:nth-of-type(5) {
-                    background-color: var(--nav-darkest);
-                }
-            }
-
-            figure:nth-of-type(4) {
-                code:nth-of-type(1) {
-                    background-color: var(--primary-bg-lightest);
-                }
-
-                code:nth-of-type(2) {
-                    background-color: var(--primary-bg-light);
-                }
-
-                code:nth-of-type(3) {
-                    background-color: var(--primary-bg-neutral);
-                }
-
-                code:nth-of-type(4) {
-                    background-color: var(--primary-bg-dark);
-                }
-                code:nth-of-type(5) {
-                    background-color: var(--primary-bg-darkest);
-                    color: var(--white);
-
-                }
-            }
-
-            figure:nth-of-type(5) {
-                code:nth-of-type(1) {
-                    background-color: var(--white);
-                    border: var(--blue-darker) solid 1px;
-                }
-
-                code:nth-of-type(2) {
-                    background-color: var();
-                    display: none;
-                }
-
-                code:nth-of-type(3) {
-                    background-color: var();
-                    display: none;
-
-                }
-
-                code:nth-of-type(4) {
-                    background-color: var();
-                    display: none;
-
-                }
-            }
-
-        }
-
-    }
-
-
-
     /* Typografie */
+
     h1 {
         font-size: var(--font-size-largest);
         font-weight: var(--font-weight-dark);
@@ -340,7 +179,7 @@ html {
         font-size: var(--font-size-smallest);
         font-weight: var(--font-weight-dark);
     }
-    
+
     p {
         font-size: var(--font-size-paragraph);
         font-weight: var(--font-weight-neutral);
@@ -350,19 +189,9 @@ html {
     /* Formulier elementen */
 
     /* styling achtergrond search */
-    .grey-bg {
-        background-color: var(--secondary-bg-lightest);
-        width: 100vw;
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* styling achtergrond search */
 
     .searchbar {
-        input{
+        input {
             border: none;
             width: 80vw;
             height: 2rem;
@@ -379,7 +208,6 @@ html {
         }
     }
 
-
     .btn {
         all: unset;
         background-color: var(--accent-light);
@@ -387,21 +215,21 @@ html {
         padding: 1rem 1rem;
         border-radius: var(--border-radius-big);
         font-weight: var(--font-weight-dark);
-        transition: background-color 1s; 
+        transition: background-color 1s;
 
         &:hover {
             background-color: var(--accent-darkest);
-        
+
         }
 
         &:active {
             background-color: var(--accent-darkest);
-        
+
         }
 
         &:focus {
             background-color: var(--accent-darkest);
-        
+
         }
     }
 
