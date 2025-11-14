@@ -75,56 +75,50 @@
 
     html {
     /* ===== BASE COLOR VARIABLES ===== */
-    --nav-h: 200;
-    --nav-s: 43%;
+    --nav-h-s: 200, 43%;
 
-    --primary-bg-h: 0;
-    --primary-bg-s: 0%;
+    --primary-bg-h-s: 0, 0%;
 
-    --secondary-bg-h: 200;
-    --secondary-bg-s: 13%;
+    --secondary-bg-h-s: 200, 13%;
 
-    --accent-h: 136;
-    --accent-s: 100%;
+    --accent-h-s: 136, 100%;
 
-    --alert-h: 357;
-    --alert-s: 100%;
-
+    --alert-h-s: 357, 100%;
 
     /* ===== NAV COLORS ===== */
-    --nav-darkest: hsl(var(--nav-h), var(--nav-s), 9%);
-    --nav-dark: hsl(var(--nav-h), var(--nav-s), 16%);
-    --nav-neutral: hsl(var(--nav-h), var(--nav-s), 23%);
-    --nav-light: hsl(var(--nav-h), var(--nav-s), 39%);
-    --nav-lightest: hsl(var(--nav-h), var(--nav-s), 45%);
+    --nav-darkest: hsl(var(--nav-h-s), 9%);
+    --nav-dark: hsl(var(--nav-h-s), 16%);
+    --nav-neutral: hsl(var(--nav-h-s), 23%);
+    --nav-light: hsl(var(--nav-h-s), 39%);
+    --nav-lightest: hsl(var(--nav-h-s), 45%);
 
     /* ===== PRIMARY BACKGROUND COLORS ===== */
-    --primary-bg-darkest: hsl(var(--primary-bg-h), var(--primary-bg-s), 50%);
-    --primary-bg-dark: hsl(var(--primary-bg-h), var(--primary-bg-s), 60%);
-    --primary-bg-neutral: hsl(var(--primary-bg-h), var(--primary-bg-s), 70%);
-    --primary-bg-light: hsl(var(--primary-bg-h), var(--primary-bg-s), 80%);
-    --primary-bg-lightest: hsl(var(--primary-bg-h), var(--primary-bg-s), 90%);
+    --primary-bg-darkest: hsl(var(--primary-bg-h-s), 50%);
+    --primary-bg-dark: hsl(var(--primary-bg-h-s), 60%);
+    --primary-bg-neutral: hsl(var(--primary-bg-h-s), 70%);
+    --primary-bg-light: hsl(var(--primary-bg-h-s), 80%);
+    --primary-bg-lightest: hsl(var(--primary-bg-h-s), 90%);
 
     /* ===== SECONDARY BACKGROUND COLORS ===== */
-    --secondary-bg-darkest: hsl(var(--secondary-bg-h), var(--secondary-bg-s), 50%);
-    --secondary-bg-dark: hsl(var(--secondary-bg-h), var(--secondary-bg-s), 60%);
-    --secondary-bg-neutral: hsl(var(--secondary-bg-h), var(--secondary-bg-s), 70%);
-    --secondary-bg-light: hsl(var(--secondary-bg-h), var(--secondary-bg-s), 80%);
-    --secondary-bg-lightest: hsl(var(--secondary-bg-h), var(--secondary-bg-s), 90%);
+    --secondary-bg-darkest: hsl(var(--secondary-bg-h-s), 50%);
+    --secondary-bg-dark: hsl(var(--secondary-bg-h-s), 60%);
+    --secondary-bg-neutral: hsl(var(--secondary-bg-h-s), 70%);
+    --secondary-bg-light: hsl(var(--secondary-bg-h-s), 80%);
+    --secondary-bg-lightest: hsl(var(--secondary-bg-h-s), 90%);
 
     /* ===== ACCENT COLORS ===== */
-    --accent-darkest: hsl(var(--accent-h), var(--accent-s), 9%);
-    --accent-dark: hsl(var(--accent-h), var(--accent-s), 16%);
-    --accent-neutral: hsl(var(--accent-h), var(--accent-s), 23%);
-    --accent-light: hsl(var(--accent-h), var(--accent-s), 39%);
-    --accent-lightest: hsl(var(--accent-h), var(--accent-s), 45%);
+    --accent-darkest: hsl(var(--accent-h-s), 9%);
+    --accent-dark: hsl(var(--accent-h-s), 16%);
+    --accent-neutral: hsl(var(--accent-h-s), 23%);
+    --accent-light: hsl(var(--accent-h-s), 39%);
+    --accent-lightest: hsl(var(--accent-h-s), 45%);
 
     /* ===== ALERT COLORS ===== */
-    --alert-darkest: hsl(var(--alert-h), var(--alert-s), 20%);
-    --alert-dark: hsl(var(--alert-h), var(--alert-s), 16%);
-    --alert-neutral: hsl(var(--alert-h), var(--alert-s), 23%);
-    --alert-light: hsl(var(--alert-h), var(--alert-s), 65%);
-    --alert-lightest: hsl(var(--alert-h), var(--alert-s), 75%);
+    --alert-darkest: hsl(var(--alert-h-s), 20%);
+    --alert-dark: hsl(var(--alert-h-s), 16%);
+    --alert-neutral: hsl(var(--alert-h-s), 23%);
+    --alert-light: hsl(var(--alert-h-s), 65%);
+    --alert-lightest: hsl(var(--alert-h-s), 75%);
 
     --white: white;
     font-family: 'Bariol', sans-serif;
