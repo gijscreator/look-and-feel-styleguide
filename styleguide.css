@@ -138,9 +138,6 @@
     --font-size-labels: .7rem;
 }
 
-
-
-
     /* Schrijf hier de verschillende stijlen, die
        gedeeld gaan worden door jullie projecten */
 
@@ -339,26 +336,55 @@
 
 
     /* Formulier elementen */
+
+    /* styling achtergrond search */
+    .grey-bg {
+        background-color: var(--secondary-bg-lightest);
+        width: 100vw;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* styling achtergrond search */
+
     .searchbar {
         input{
-            border: var(--blue-darker) 2px solid;
-            border-radius: 20px;
+            border: none;
+            width: 80vw;
+            height: 2rem;
+            max-height: 3rem;
+            background-color: var(--white);
+            border-radius: .3rem;
             width: 15rem;
+        }
+
+        input:focus,
+        input:focus-visible {
+            outline: none;
+            box-shadow: none;
         }
     }
 
+
     .btn {
         all: unset;
-        background-color: var(--green-dark);
+        background-color: var(--accent-light);
         color: var(--white);
         padding: 1rem 1rem;
         border-radius: 1.5rem;
         font-weight: bold;
+
+        &:hover {
+            background-color: var(--accent-light);
+
+        }
     }
 
     .btn-round {
         all: unset;
-        background-color: var(--green-dark);
+        background-color: var(--accent-light);
         color: var(--white);
         padding: 3vw;
         border-radius: 100%;
@@ -367,7 +393,7 @@
 
     .btn-round-capture {
         all: unset;
-        background-color: var(--green-dark);
+        background-color: var(--accent-light);
         color: var(--white);
         padding: 3rem 3rem;
         border-radius: 100%;
