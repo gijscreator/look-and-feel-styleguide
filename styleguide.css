@@ -5,7 +5,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: normal;
-    font-weight: 200;
+    font-weight: var(--font-weight-lightest);
     src: local('Bariol Thin'), url('fonts/bariol_thin-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -13,7 +13,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: italic;
-    font-weight: 200;
+    font-weight: var(--font-weight-light);
     src: local('Bariol Thin Italic'), url('fonts/bariol_thin_italic-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -21,7 +21,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: normal;
-    font-weight: 300;
+    font-weight: var(--font-weight-neutral);
     src: local('Bariol Light'), url('fonts/bariol_light-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -29,7 +29,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: italic;
-    font-weight: 300;
+    font-weight: var(--font-weight-neutral);
     src: local('Bariol Light Italic'), url('fonts/bariol_light_italic-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -37,7 +37,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: normal;
-    font-weight: 400;
+    font-weight: var(--font-weight-neutral);
     src: local('Bariol Regular'), url('fonts/bariol_regular-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -45,7 +45,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: italic;
-    font-weight: 400;
+    font-weight: var(--font-weight-neutral);
     src: local('Bariol Regular Italic'), url('fonts/bariol_regular_italic-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -53,7 +53,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: normal;
-    font-weight: 700;
+    font-weight: var(--font-weight-dark);
     src: local('Bariol Bold'), url('fonts/bariol_bold-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -61,7 +61,7 @@
 @font-face {
     font-family: 'Bariol';
     font-style: italic;
-    font-weight: 700;
+    font-weight: var(--font-weight-dark);
     src: local('Bariol Bold Italic'), url('fonts/bariol_bold_italic-webfont.woff') format('woff');
     font-display: swap;
 }
@@ -73,7 +73,7 @@
         line-height: 1.4;
     }
 
-    html {
+html {
     /* ===== BASE COLOR VARIABLES ===== */
     --nav-h-s: 200, 43%;
 
@@ -120,9 +120,13 @@
     --alert-light: hsl(var(--alert-h-s), 65%);
     --alert-lightest: hsl(var(--alert-h-s), 75%);
 
+    /* ===== WHITE ===== */
     --white: white;
+
+    /* ===== FONT-FAMILY ===== */
     font-family: 'Bariol', sans-serif;
 
+    /* =====FONT-SIZE ===== */
     --font-size-largest: 2.75rem;
     --font-size-large: 2.25rem;
     --font-size-medium: 1.75rem;
@@ -130,6 +134,20 @@
     --font-size-smallest: 1.25rem;
     --font-size-paragraph: 1rem;
     --font-size-labels: .7rem;
+
+    /* ===== FONT-WEIGHT ===== */
+    --font-weight-darkest: 900;
+    --font-weight-dark: 700;
+    --font-weight-neutral: 400;
+    --font-weight-light: 200;
+    --font-weight-lightest: 100;
+
+    /* ===== BORDER-RADIUS ===== */
+    --border-radius-tiny: .3rem;
+    --border-radius-small: .5rem;
+    --border-radius-neutral: 1rem;
+    --border-radius-big: 1.5rem;
+    --border-radius-round: 100%;
 }
 
     /* Schrijf hier de verschillende stijlen, die
@@ -295,37 +313,37 @@
     /* Typografie */
     h1 {
         font-size: var(--font-size-largest);
-        font-weight: 700;
+        font-weight: var(--font-weight-dark);
     }
 
     h2 {
         font-size: var(--font-size-large);
-        font-weight: 700;
+        font-weight: var(--font-weight-dark);
     }
 
     h3 {
         font-size: var(--font-size-medium);
-        font-weight: 700;
+        font-weight: var(--font-weight-dark);
     }
 
     h4 {
         font-size: var(--font-size-small);
-        font-weight: 700;
+        font-weight: var(--font-weight-dark);
     }
 
     h5 {
         font-size: var(--font-size-smallest);
-        font-weight: 700;
+        font-weight: var(--font-weight-dark);
     }
 
     h6 {
         font-size: var(--font-size-smallest);
-        font-weight: 700;
+        font-weight: var(--font-weight-dark);
     }
     
     p {
         font-size: var(--font-size-paragraph);
-        font-weight: 700;
+        font-weight: var(--font-weight-neutral);
     }
 
 
@@ -350,7 +368,7 @@
             height: 2rem;
             max-height: 3rem;
             background-color: var(--white);
-            border-radius: .3rem;
+            border-radius: var(--border-radius-tiny);
             width: 15rem;
         }
 
@@ -367,8 +385,8 @@
         background-color: var(--accent-light);
         color: var(--white);
         padding: 1rem 1rem;
-        border-radius: 1.5rem;
-        font-weight: bold;
+        border-radius: var(--border-radius-big);
+        font-weight: var(--font-weight-dark);
         transition: background-color 1s; 
 
         &:hover {
@@ -389,13 +407,12 @@
 
     .round {
         padding: 2vw;
-        border-radius: 100%;
+        border-radius: var(--border-radius-round);
         line-height: 1;
     }
 
-    .round-capture {
+    .capture {
         padding: 3rem 3rem;
-        border-radius: 100%;
 
         svg {
             width: 3rem;
