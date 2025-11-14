@@ -71,13 +71,9 @@
     html {
         /* ===== BASE COLOR VARIABLES ===== */
         --nav-h-s: 200, 43%;
-
         --primary-bg-h-s: 0, 0%;
-
         --secondary-bg-h-s: 200, 13%;
-
         --accent-h-s: 136, 100%;
-
         --alert-h-s: 357, 100%;
 
         /* ===== NAV COLORS ===== */
@@ -123,14 +119,14 @@
         font-family: var(--font-family);
 
         /* =====FONT-SIZE ===== */
-        
-        --font-size-largest: 2.75rem;
-        --font-size-large: 2.25rem;
-        --font-size-medium: 1.75rem;
-        --font-size-small: 1.5rem;
-        --font-size-smallest: 1.25rem;
-        --font-size-paragraph: 1rem;
-        --font-size-labels: .7rem;
+
+        --font-size-largest: clamp(1.8rem, 3vw, 2.4rem);
+        --font-size-large: clamp(1.6rem, 2.5vw, 2rem);
+        --font-size-medium: clamp(1.3rem, 2vw, 1.75rem);
+        --font-size-small: clamp(1.1rem, 1.6vw, 1.5rem);
+        --font-size-smallest: clamp(0.95rem, 1.2vw, 1.25rem);
+        --font-size-paragraph: clamp(0.9rem, 1vw, 1rem);
+        --font-size-labels: clamp(0.65rem, 0.8vw, 0.8rem);
 
         /* ===== FONT-WEIGHT ===== */
         --font-weight-darkest: 900;
