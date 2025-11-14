@@ -128,6 +128,13 @@
 
     --white: white;
     font-family: 'Bariol', sans-serif;
+
+    --font-size-largest: 2.75rem;
+    --font-size-large: 2.25rem;
+    --font-size-medium: 1.75rem;
+    --font-size-small: 1.5rem;
+    --font-size-smallest: 1.25rem;
+    --font-size-paragraph: 1rem;
 }
 
 
@@ -295,36 +302,36 @@
 
     /* Typografie */
     h1 {
-        font-size: 2.75rem;
+        font-size: var(--font-size-largest);
         font-weight: 700;
     }
 
     h2 {
-        font-size: 2.25rem;
+        font-size: var(--font-size-large);
         font-weight: 700;
     }
 
     h3 {
-        font-size: 1.75rem;
+        font-size: var(--font-size-medium);
         font-weight: 700;
     }
 
     h4 {
-        font-size: 1.5rem;
+        font-size: var(--font-size-small);
         font-weight: 700;
     }
 
     h5 {
-        font-size: 1.25rem;
+        font-size: var(--font-size-smallest);
         font-weight: 700;
     }
 
     h6 {
-        font-size: 1.25rem;
+        font-size: var(--font-size-smallest);
         font-weight: 700;
     }
     p {
-        font-size: 1rem;
+        font-size: var(--font-size-paragraph);
         font-weight: 700;
     }
 
