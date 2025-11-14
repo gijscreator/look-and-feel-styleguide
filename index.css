@@ -224,11 +224,19 @@ figure:nth-of-type(5) {
 }
 
 /* styling achtergrond search */
+article {
+  height: 200px;
+  max-width: 40em;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
 .grey-bg {
-    background-color: var(--secondary-bg-lightest);
-    width: 100vw;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--secondary-bg-lightest);
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

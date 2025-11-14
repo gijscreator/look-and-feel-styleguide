@@ -206,6 +206,41 @@
         }
     }
 
+    input[type="radio"],
+    input[type="checkbox"] {
+        accent-color: var(--accent-light);
+        margin: 0.5rem;
+    }
+
+    .text {
+        input {
+            border: none;
+            width: 80vw;
+            height: 2rem;
+            max-height: 3rem;
+            background-color: var(--white);
+            border-radius: .3rem;
+            width: 15rem;
+        }
+
+        input:focus,
+        input:focus-visible {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    .textarea {
+        border: none;
+        width: 80vw;
+        height: 10rem;
+        max-height: 10rem;
+        background-color: var(--white);
+        border-radius: .3rem;
+        width: 15rem;
+
+    }
+
     .btn {
         all: unset;
         background-color: var(--accent-light);
