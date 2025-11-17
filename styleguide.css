@@ -143,10 +143,11 @@
         --border-radius-round: 100%;
 
         /* ===== SVG-SIZES ===== */
-        --svg-nav: 1.5rem;
-        --svg-feedback: 1rem;
-        --svg-smallest: 0.7rem
-
+        --svg-biggest: 3rem;
+        --svg-big: 2rem;
+        --svg-medium: 1.5rem;
+        --svg-small: 1rem;
+        --svg-smallest: 0.7rem;
 
     }
 
