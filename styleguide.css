@@ -141,6 +141,13 @@
         --border-radius-neutral: 1rem;
         --border-radius-big: 1.5rem;
         --border-radius-round: 100%;
+
+        /* ===== SVG-SIZES ===== */
+        --svg-nav: 1.5rem;
+        --svg-feedback: 1rem;
+        --svg-smallest: 0.7rem
+
+
     }
 
     /* Schrijf hier de verschillende stijlen, die
