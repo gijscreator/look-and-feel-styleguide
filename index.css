@@ -225,7 +225,6 @@ figure:nth-of-type(5) {
 
 /* styling achtergrond search */
 article {
-  height: 200px;
   max-width: 40em;
   padding: 40px;
   display: flex;
@@ -235,7 +234,6 @@ article {
 
 .grey-bg {
   background-color: var(--secondary-bg-lightest);
-  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;

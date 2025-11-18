@@ -196,6 +196,11 @@
 
     /* styling achtergrond search */
 
+    label:has(:required)::after {
+        /* content: "✻";
+        color: red; */
+    }
+
     .searchbar {
         input {
             border: none;
@@ -273,8 +278,8 @@
 
         &:focus-visible {
             background-color: var(--accent-darkest);
-	outline: solid .15em currentcolor;
-		outline-offset: -.3em;
+            outline: solid .15em currentcolor;
+            outline-offset: -.3em;
         }
     }
 
@@ -324,13 +329,26 @@
 
             &:checked {
                 background-color: var(--accent-light);
-
             }
 
             &:checked::after {
                 translate: 100%;
                 background-color: var(--primary-bg-lightest);
             }
+        }
+    }
+
+    .date-time {
+        display: flex;
+        flex-direction: column;
+        
+        input {
+            border: none;
+            height: 2rem;
+            max-width: 10rem;
+            background-color: var(--white);
+            border-radius: .3rem;
+            font-family: inherit;
         }
     }
 }
