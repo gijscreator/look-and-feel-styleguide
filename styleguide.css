@@ -257,6 +257,8 @@
         border-radius: var(--border-radius-big);
         font-weight: var(--font-weight-dark);
         transition: background-color 1s;
+        user-select: none;
+        cursor: pointer;
 
         &:hover {
             background-color: var(--accent-darkest);
@@ -265,12 +267,14 @@
 
         &:active {
             background-color: var(--accent-darkest);
+            translate: 0 1px;
 
         }
 
-        &:focus {
+        &:focus-visible {
             background-color: var(--accent-darkest);
-
+	outline: solid .15em currentcolor;
+		outline-offset: -.3em;
         }
     }
 
@@ -286,6 +290,47 @@
         svg {
             width: 3rem;
             height: auto;
+        }
+    }
+
+    .slide-box {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+        padding-block: .25em;
+
+        input {
+            cursor: inherit;
+            appearance: none;
+            margin: 0;
+            width: 3em;
+            aspect-ratio: 2/1;
+            background-color: var(--alert-light);
+            border-radius: 2.5rem;
+            border: 1px solid var(--secondary-bg-neutral);
+            transition: .3s;
+
+            &::after {
+                content: "";
+                height: 100%;
+                display: block;
+                aspect-ratio: 1;
+                border-radius: inherit;
+                transition: .3s;
+                background-color: var(--primary-bg-lightest);
+                border: 1px solid var(--primary-bg-dark);
+            }
+
+            &:checked {
+                background-color: var(--accent-light);
+
+            }
+
+            &:checked::after {
+                translate: 100%;
+                background-color: var(--primary-bg-lightest);
+            }
         }
     }
 }
