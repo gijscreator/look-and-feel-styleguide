@@ -112,7 +112,7 @@
         --alert-lightest: hsl(var(--alert-h-s), 75%);
 
         /* ===== WHITE ===== */
-        --white: white;
+        --white: hsl(0, 0%, 100%);
 
         /* ===== FONT-FAMILY ===== */
         --font-family: 'Bariol', sans-serif;
@@ -134,6 +134,12 @@
         --font-weight-neutral: 400;
         --font-weight-light: 200;
         --font-weight-lightest: 100;
+
+        /* ===== FONT-COLOR ===== */
+        --font-color-light: hsl(0, 0%, 100%);
+        --font-color-dark: hsl(0, 0%, 0%);
+        --font-color-accent: hsl(107, 100%, 64%);
+        --font-color-noti: hsl(0, 100%, 31%);
 
         /* ===== BORDER-RADIUS ===== */
         --border-radius-tiny: .3rem;
