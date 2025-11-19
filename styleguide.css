@@ -317,7 +317,7 @@
             margin: 0;
             width: 3em;
             aspect-ratio: 2/1;
-            background-color: var(--alert-light);
+            background-color: var(--secondary-bg-light);
             border-radius: 2.5rem;
             border: 1px solid var(--secondary-bg-neutral);
             transition: .3s;
