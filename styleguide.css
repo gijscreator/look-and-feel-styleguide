@@ -347,7 +347,7 @@
     .date-time {
         display: flex;
         flex-direction: column;
-        
+
         input {
             border: none;
             height: 2rem;
@@ -355,6 +355,27 @@
             background-color: var(--white);
             border-radius: .3rem;
             font-family: inherit;
+        }
+    }
+
+    .password {
+        input {
+            appearance: none;
+            border: 3px solid var(--white);
+            width: 80vw;
+            height: 2rem;
+            max-height: 3rem;
+            background-color: var(--white);
+            border-radius: .3rem;
+            width: 15rem;
+
+            &:user-invalid {
+                border: 3px solid var(--alert-light);
+            }
+
+            &:user-valid {
+                border: 3px solid var(--accent-light);
+            }
         }
     }
 }
