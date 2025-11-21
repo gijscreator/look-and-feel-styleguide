@@ -125,7 +125,7 @@
         --font-size-medium: clamp(1.3rem, 2vw, 1.75rem);
         --font-size-small: clamp(1.1rem, 1.6vw, 1.5rem);
         --font-size-smallest: clamp(0.95rem, 1.2vw, 1.25rem);
-        --font-size-paragraph: clamp(0.9rem, 1vw, 1rem);
+        --font-size-paragraph: clamp(0.1rem, 1.3vw, 1.35rem);
         --font-size-labels: clamp(0.65rem, 0.8vw, 0.8rem);
 
         /* ===== FONT-WEIGHT ===== */
