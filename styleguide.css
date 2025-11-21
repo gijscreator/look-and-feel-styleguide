@@ -110,7 +110,7 @@
         --alert-neutral: hsl(var(--alert-h-s), 23%);
         --alert-light: hsl(var(--alert-h-s), 65%);
         --alert-lightest: hsl(var(--alert-h-s), 75%);
-
+        
         /* ===== WHITE ===== */
         --white: hsl(0, 0%, 100%);
 
