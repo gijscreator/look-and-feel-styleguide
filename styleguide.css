@@ -296,14 +296,23 @@
     }
 
     .capture {
-        padding: 3rem 3rem;
+      width: 33vw;
+      height: 33vw;
+      border-radius: 50%;
+      background-color: var(--accent-neutral);
+      border: none;
+      cursor: pointer;
 
         svg {
             width: 3rem;
             height: auto;
         }
-    }
 
+        input {
+            display: none;
+        }
+    }   
+    
     .slide-box {
         cursor: pointer;
         display: flex;
